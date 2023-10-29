@@ -54,3 +54,6 @@ ENV TERM=xterm-256color
 
 # Become a regular user
 USER $USERNAME
+
+docker tag accounts us.icr.io/$SN_ICR_NAMESPACE/accounts:1
+docker push us.icr.io/$SN_ICR_NAMESPACE/accounts:1
